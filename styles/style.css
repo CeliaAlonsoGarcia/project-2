@@ -27,11 +27,9 @@ body {
   padding: 3rem;
   background-color: pink;
   font-family: sans-serif;
-  border: solid;
-  border-color: white;
-  border-width: 10px;
   border-radius: 1rem;
   margin: 2rem 0rem 2rem;
+  box-shadow: 0 0.5rem rgba(96, 41, 93, 0.588);
 }
 
 .project {
@@ -75,11 +73,12 @@ button:hover {
 .card {
   border: solid;
   border-width: 10px;
-  border-color: black;
+  border-color: rgba(31, 7, 31, 0.502);
   padding: 20px;
   border-radius: 20px;
   margin: 10px;
   height: auto;
+  border-width: 0.4rem;
 
   /* height set to auto so that the box opens and closes */
 }
