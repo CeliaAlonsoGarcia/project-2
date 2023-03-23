@@ -1,15 +1,37 @@
-* {
-  box-sizing: border-box;
+footer {
+  left: 0;
+  bottom: 0;
+  margin-top: 2rem;
+  width: 100%;
 }
 
-header {
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  padding: 80px;
+}
+
+.title {
   text-align: center;
-  padding: 20px;
+  padding: 3rem;
   background-color: pink;
   font-family: sans-serif;
   border: solid;
   border-color: white;
   border-width: 10px;
+  border-radius: 1rem;
+  margin: 2rem 0rem 2rem;
 }
 
 .project {
@@ -33,6 +55,21 @@ button {
   width: 100px;
   margin: auto;
   display: block;
+  cursor: pointer;
+  background-color: rgba(251, 202, 224, 0.306);
+  color: rgb(64, 58, 58);
+  box-shadow: 0 5px rgb(220, 216, 216);
+}
+
+button:hover {
+  color: rgba(138, 60, 73, 0.957);
+  border-color: currentColor;
+  background-color: white;
+}
+
+.button:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
 }
 
 .card {
@@ -56,7 +93,7 @@ h2 {
   margin: auto;
 }
 
-p {
+.blurb {
   width: 100%;
   max-width: 400px;
   font-family: sans-serif;
@@ -76,4 +113,28 @@ p {
   justify-content: center;
   display: block;
   margin: auto;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: flex-start;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  div.card {
+    width: 20rem;
+  }
+  .projectBtn,
+  .repoBtn {
+    margin: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+  }
 }
