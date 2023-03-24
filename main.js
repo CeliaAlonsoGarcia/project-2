@@ -3,6 +3,7 @@ const elements = [
   { buttonId: "button2", textId: "text2" },
   { buttonId: "button3", textId: "text3" },
   { buttonId: "button4", textId: "text4" },
+  { buttonId: "button5", textId: "text5" },
 ];
 
 elements.forEach(function (element) {
