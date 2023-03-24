@@ -65,7 +65,7 @@ button:hover {
   background-color: white;
 }
 
-.button:active {
+button:active {
   transform: translateY(1px);
   filter: saturate(150%);
 }
