@@ -157,4 +157,8 @@ h2 {
   footer {
     font-size: 10px;
   }
+
+  body {
+    padding: 40px;
+  }
 }
